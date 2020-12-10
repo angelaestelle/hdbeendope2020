@@ -276,10 +276,17 @@ input {
 /* STREAMING */
 
 .stream-wrapper {
+  position: absolute;
   clear: both;
   min-width: 100%;
-  height: auto;
+  height: 100%;
   background-color: goldenrod;
+}
+
+#twitch-embed {
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
 }
 
 /* MUSIC PLAYER */

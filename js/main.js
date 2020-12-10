@@ -86,12 +86,6 @@ function fastForward() {
 
 //NEXT SONG
 
-music.addEventListener('ended',function(){
-  //play next song
-});
-
-// testing async lol
-
 var request = new XMLHttpRequest()
 const trackDisplay = document.getElementById('trackDisplay')
 const audioSrc = document.getElementById('audioSrc')
@@ -100,7 +94,8 @@ const audio = document.getElementById('music');
 async function f() {
 
 
-  // STUFF HERE
+// AUDIUS STUFF 
+
   // GET PLAYLIST TRACKS
 
   const getPlaylist = async () => {
@@ -147,6 +142,9 @@ f()
 
 
 /* TWITCH API*/
+/* TWITCH API*/
+/* TWITCH API*/
+
 //Create a Twitch.Embed object that 
 //will render within the "twitch-embed" root element.
 
