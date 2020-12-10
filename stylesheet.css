@@ -314,11 +314,9 @@ input {
 }
 
 #cover-art {
-}
-
-.track-info-display {
-  font-family: px sans, "Courier New", Courier, monospace;
-  font-size: 0.8em;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
 }
 
 .audio-btn {
@@ -326,6 +324,12 @@ input {
   background: transparent;
   border: none;
   transform: scale(1.5);
+}
+
+#now-playing,
+#trackDisplay {
+  color: #000;
+  font-family: px sans, "Courier New", Courier, monospace;
 }
 
 /*MEDIA QUERIES*/ /*MEDIA QUERIES*/ /*MEDIA QUERIES*/

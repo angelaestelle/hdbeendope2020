@@ -31,10 +31,8 @@
       <!--MUSIC PLAYER-->
       <div class="audius-wrapper">
         <div class="audius-player" id="music-player">
+          <p id="now-playing">Now playing: <span id="trackDisplay"></span></p>
           <div id="cover-art"></div>
-
-          <p>Current track:</p>
-          <div id="trackDisplay"></div>
 
           <!-- AUDIO CONTROLS -->
           <audio controls id="music">
@@ -45,12 +43,18 @@
             Your browser does not support the audio element.
           </audio>
 
-          <p>Click the buttons to play or pause the music.</p>
-
-          <button onclick="play()" type="button">Play</button>
-          <button onclick="pause()" type="button">Pause</button>
-          <button onclick="rewindAudio()" type="button">rewind</button>
-          <button onclick="fastForward()" type="button">fast forward</button>
+          <button onclick="play()" type="button">
+            <i class="fa fa-play"></i>
+          </button>
+          <button onclick="pause()" type="button">
+            <i class="fa fa-pause"></i>
+          </button>
+          <button onclick="rewindAudio()" type="button">
+            <i class="fa fa-backward"></i>
+          </button>
+          <button onclick="fastForward()" type="button">
+            <i class="fa fa-forward"></i>
+          </button>
 
           <script>
             var myMusic = document.getElementById("music");

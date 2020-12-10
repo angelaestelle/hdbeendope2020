@@ -89,10 +89,10 @@ function fastForward() {
 var request = new XMLHttpRequest()
 const trackDisplay = document.getElementById('trackDisplay')
 const audioSrc = document.getElementById('audioSrc')
-const audio = document.getElementById('music');
+const audio = document.getElementById('music')
+const artwork = document.getElementById('cover-art')
 
 async function f() {
-
 
 // AUDIUS STUFF 
 
@@ -112,6 +112,9 @@ async function f() {
   const track = playList[0]
   // SET TRACK TITLE
   trackDisplay.textContent = track.title;
+// SET TRACK ART
+artwork.innerHTML = '<img src=https://creatornode2.audius.co/ipfs/Qmeqtb6tkBLP6QM5Zzf2PN7rjqAgg5TXvCZrQxstSo42Q1/1000x1000.jpg/>';
+
   // SET TRACK STREAM
   audioSrc.src = 'https://discoveryprovider2.audius.co/v1/tracks/${track.id}/stream';
   // PRELOAD
@@ -123,18 +126,6 @@ async function f() {
   // 'https://discoveryprovider2.audius.co/v1/tracks/m7VmA/stream'
 
 
-  // // GET TRACK INFO
-  // fetch('https://discoveryprovider2.audius.co/v1/tracks/m7VmA',
-  // {
-  //   method: 'GET',
-
-  //   headers: headers
-  // })
-  // .then(function(res) {
-  //     return res.json();
-  // }).then(function(body) {
-  //     console.log(body);
-  // });
 
   // End of function
 }
