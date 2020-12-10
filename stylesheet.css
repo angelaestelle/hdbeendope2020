@@ -211,6 +211,11 @@ body {
   font-size: 0.8em;
 }
 
+#mc-embedded-subscribe {
+  background: none;
+  border: none;
+}
+
 .cta {
   display: block;
   clear: both;

@@ -149,7 +149,6 @@ f()
 //will render within the "twitch-embed" root element.
 
 
-
 new Twitch.Embed("twitch-embed", {
   width: 854,
   height: 480,
