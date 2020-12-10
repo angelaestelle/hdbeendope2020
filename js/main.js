@@ -18,21 +18,21 @@ AUDIUS API AUDIUS API AUDIUS API AUDIUS API AUDIUS API
 //PLAY SONG
 
 
-function playPause() { 
+function play() { 
 if (window.HTMLAudioElement) {
   try {
-  var playerAudio = document.getElementById('mySong');
-  var btn = document.getElementById(play);
-  if (playerAudio.paused) {
+  var playerAudio = document.getElementById('music');
   
-    var c = document.getElementsByTagName('i')
+  var btn = document.getElementsByClassName('play');
+  if (playerAudio.paused) {
+
+    var c = document.getElementsByClassName('play')
     var b;
     for (b in c) {
       c[b].className = 'fa fa-pause'
     }
     playerAudio.play();
     document.getElementsByClassName("fa-play").className = "fa fa-pause";    
-alert('play swapped')
 } 
   else {
     if (playerAudio.play) {
@@ -55,7 +55,11 @@ catch (e) {
 }
 }
 }
-// REWIND
+
+// PREVIOUS SONG
+//Code is currently from previous rewind() function
+//Delete these notes once its updated
+
 var musicPlayer = document.getElementById("music"); 
 function rewindAudio() {
   if(window.HTMLAudioElement){
@@ -70,7 +74,11 @@ function rewindAudio() {
   }
 }
 
-//FAST FORWARD
+//NEXT SONG
+//Code is currently from previous fastForward() function
+//Delete these notes once its updated
+
+
 function fastForward() {
   if(window.HTMLAudioElement){
     try {

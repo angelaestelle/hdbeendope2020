@@ -30,8 +30,8 @@
       <div class="audius-wrapper">
         <div class="audius-player" id="music-player">
           <span class="popup-title">HDBEENDOPE - Music Player</span>
-          <div class="close-bar">
-            <br>
+          <div class="close-bar"></div>
+          <br />
           <p id="now-playing">Now playing: <span id="trackDisplay"></span></p>
           <div id="cover-art"></div>
 
@@ -45,17 +45,17 @@
             Your browser does not support the audio element.
           </audio>
 
-          <button onclick="play()" type="button">
+          <button onclick="lastSong()" type="button">
+            <i class="fa fa-step-backward"></i>
+          </button>
+          <button onclick="play()" type="button" id="play">
             <i class="fa fa-play"></i>
           </button>
-          <button onclick="pause()" type="button">
-            <i class="fa fa-pause"></i>
+          <button onclick="stop()" type="button">
+            <i class="fa fa-stop"></i>
           </button>
-          <button onclick="rewindAudio()" type="button">
-            <i class="fa fa-backward"></i>
-          </button>
-          <button onclick="fastForward()" type="button">
-            <i class="fa fa-forward"></i>
+          <button onclick="nextSong()" type="button">
+            <i class="fa fa-step-forward"></i>
           </button>
 
           <script>
