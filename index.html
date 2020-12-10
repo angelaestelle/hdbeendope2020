@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <!--CONTENT WRAPPER START-->
+    <div class="content">
+      <!--MUSIC PLAYER-->
+      <div class="audius-wrapper">
+        <div class="audius-player" id="music-player">
+          <div id="cover-art"></div>
+
+          <p>Current track:</p>
+          <div id="trackDisplay"></div>
+
+          <!-- AUDIO CONTROLS -->
+          <audio controls id="music">
+            <source
+              src="https://discoveryprovider3.audius.co/v1/tracks/m7VmA/stream"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+
+          <p>Click the buttons to play or pause the music.</p>
+
+          <button onclick="play()" type="button">Play</button>
+          <button onclick="pause()" type="button">Pause</button>
+          <button onclick="rewindAudio()" type="button">rewind</button>
+          <button onclick="fastForward()" type="button">fast forward</button>
+
+          <script>
+            var myMusic = document.getElementById("music");
+            function play() {
+              myMusic.play();
+            }
+
+            function pause() {
+              myMusic.pause();
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVERYTHING ELSE -->
+    <div class="grid-container">
+      <div class="nav-item left">
+        <a href="email.html" class="nav-link">
+          <img src="images/email-icon.png" class="nav-icon" />
+          <div class="nav-item-title">Email</div>
+        </a>
+      </div>
+
+      <div class="nav-item right">
+        <a href="documents.html" class="nav-link">
+          <img src="images/docs-icon.png" class="nav-icon" />
+          <div class="nav-item-title">My Documents</div></a
+        >
+      </div>
+      <div class="nav-item left-2r">
+        <a href="stream.html" class="nav-link">
+          <img src="images/stream-icon.png" class="nav-icon" />
+          <div class="nav-item-title">Stream</div></a
+        >
+      </div>
+
+      <div class="nav-item right-2r">
+        <a href="" class="nav-link">
+          <img src="images/cd-icon.png" class="nav-icon" />
+          <div class="nav-item-title">SoundCloud</div></a
+        >
+      </div>
+    </div>
+
+    <!--CONTENT WRAPPER END-->
+
+    <div class="full-row">
+      <div class="footer">
+        <a href=""
+          ><div id="start">
+            <img src="images/arthur_icon.png" class="menu-icon" />Start
+          </div></a
+        >
+        <a href=""
+          ><div id="socials">
+            <img src="images/twitter.png" class="menu-icon" />Twitter
+          </div></a
+        >
+        <a href=""
+          ><div id="socials">
+            <img src="images/ig.png" class="menu-icon" />Instagram
+          </div></a
+        >
+        <div id="time">5:12 PM</div>
+      </div>
+    </div>
+
+    <script src="js/main.js" async defer></script>
+  </body>
+</html>
