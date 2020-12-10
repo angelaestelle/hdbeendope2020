@@ -22,34 +22,83 @@
 
     <!--CONTENT WRAPPER START-->
     <div class="content">
-      <div class="grid-container">
-        <div class="nav-item left">
-          <a href="email.html" class="nav-link">
-            <img src="images/email-icon.png" class="nav-icon" />
-            <div class="nav-item-title">Email</div>
-          </a>
-        </div>
-
-        <div class="nav-item right">
-          <a href="" class="nav-link">
-            <img src="images/docs-icon.png" class="nav-icon" />
-            <div class="nav-item-title">My Documents</div></a
-          >
-        </div>
-        <div class="nav-item left-2r">
-          <a href="" class="nav-link">
-            <img src="images/stream-icon.png" class="nav-icon" />
-            <div class="nav-item-title">Stream</div></a
-          >
-        </div>
-
-        <div class="nav-item right-2r">
-          <a href="" class="nav-link">
-            <img src="images/cd-icon.png" class="nav-icon" />
-            <div class="nav-item-title">SoundCloud</div></a
-          >
-        </div>
-      </div>
+            <!--MUSIC PLAYER-->
+            <div class="audius-wrapper">
+              <div class="audius-player" id="music-player">
+                <span class="popup-title">HDBEENDOPE - Music Player</span>
+                <div class="close-bar">
+                  <br>
+                <p id="now-playing">Now playing: <span id="trackDisplay"></span></p>
+                <div id="cover-art"></div>
+      
+                <!-- AUDIO CONTROLS -->
+                <audio controls id="music">
+                  <source
+                    src="https://discoveryprovider3.audius.co/v1/tracks/m7VmA/stream"
+                    type="audio/mpeg"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+      
+                <button onclick="play()" type="button">
+                  <i class="fa fa-play"></i>
+                </button>
+                <button onclick="pause()" type="button">
+                  <i class="fa fa-pause"></i>
+                </button>
+                <button onclick="rewindAudio()" type="button">
+                  <i class="fa fa-backward"></i>
+                </button>
+                <button onclick="fastForward()" type="button">
+                  <i class="fa fa-forward"></i>
+                </button>
+      
+                <script>
+                  var myMusic = document.getElementById("music");
+                  function play() {
+                    myMusic.play();
+                  }
+      
+                  function pause() {
+                    myMusic.pause();
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
+      
+          <!-- END MUSIC PLAYER-->
+          
+        <!-- EVERYTHING ELSE -->
+    
+          <div class="grid-container">
+            <div class="nav-item left">
+              <a href="email.html" class="nav-link">
+                <img src="images/email-icon.png" class="nav-icon" />
+                <div class="nav-item-title">Email</div>
+              </a>
+            </div>
+      
+            <div class="nav-item right">
+              <a href="documents.html" class="nav-link">
+                <img src="images/docs-icon.png" class="nav-icon" />
+                <div class="nav-item-title">My Documents</div></a
+              >
+            </div>
+            <div class="nav-item left-2r">
+              <a href="stream.html" class="nav-link">
+                <img src="images/stream-icon.png" class="nav-icon" />
+                <div class="nav-item-title">Stream</div></a
+              >
+            </div>
+      
+            <div class="nav-item right-2r">
+              <a href="https://smarturl.it/HDBrokeNDreams" class="nav-link">
+                <img src="images/cd-icon.png" class="nav-icon" />
+                <div class="nav-item-title">Music</div></a
+              >
+            </div>
+          </div>
 
       <!-- EMAIL WINDOW -->
       <div class="popup-email">
