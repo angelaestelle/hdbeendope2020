@@ -23,10 +23,11 @@ if (window.HTMLAudioElement) {
   try {
   var playerAudio = document.getElementById('music');
   
-  var btn = document.getElementsByClassName('play');
+  var btn = document.getElementById('play');
+  
   if (playerAudio.paused) {
 
-    var c = document.getElementsByClassName('play')
+    var c = document.getElementsByTagName('i')
     var b;
     for (b in c) {
       c[b].className = 'fa fa-pause'

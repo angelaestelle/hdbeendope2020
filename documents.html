@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -11,63 +11,80 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="#">upgrade your browser</a> to improve your experience.
-      </p>
-    <![endif]-->
+    <div class="bg">
+      <!--[if lt IE 7]>
+        <p class="browsehappy">
+          You are using an <strong>outdated</strong> browser. Please
+          <a href="#">upgrade your browser</a> to improve your experience.
+        </p>
+      <![endif]-->
 
-    <!--CONTENT WRAPPER START-->
-    <div class="content">
+     <!--CONTENT WRAPPER START-->
+     <div class="content">
       <!--MUSIC PLAYER-->
       <div class="audius-wrapper">
         <div class="audius-player" id="music-player">
           <span class="popup-title">HDBEENDOPE - Music Player</span>
           <div class="close-bar">
-            <br />
-            <p id="now-playing">Now playing: <span id="trackDisplay"></span></p>
-            <div id="cover-art"></div>
+            <span class="close-x"
+              ><img src="images/close-x.png" style="margin-top: 2px"
+            /></span>
+          </div>
+          <div class="grid-player">
+            <div class="artwork-grid">
+              <div id="cover-art"></div>
+            </div>
 
-            <!-- AUDIO CONTROLS -->
-            <audio controls id="music">
-              <source
-                src="https://discoveryprovider3.audius.co/v1/tracks/m7VmA/stream"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
-            </audio>
+            <!--PLAYLIST-->
+            <div class="playlist-grid">
+              <div class="content" id="playlist"></div>
+            </div>
+          </div>
+          <p id="now-playing">Now playing: <span id="trackDisplay"></span></p>
 
-            <button onclick="play()" type="button">
+          <img src="images/turbocharged.png" id="turbocharged" />
+
+          <!-- AUDIO CONTROLS -->
+          <audio controls id="music">
+            <source src="" type="audio/mpeg" id="audioSrc" />
+            Your browser does not support the audio element.
+          </audio>
+          <div class="controls-container">
+            <button type="button" id="previous">
+              <i class="fa fa-step-backward"></i>
+            </button>
+            <button type="button" id="playpause">
               <i class="fa fa-play"></i>
             </button>
-            <button onclick="pause()" type="button">
-              <i class="fa fa-pause"></i>
+            <button type="button" id="stop">
+              <i class="fa fa-stop"></i>
             </button>
-            <button onclick="rewindAudio()" type="button">
-              <i class="fa fa-backward"></i>
+            <button type="button" id="next">
+              <i class="fa fa-step-forward"></i>
             </button>
-            <button onclick="fastForward()" type="button">
-              <i class="fa fa-forward"></i>
-            </button>
-
-            <script>
-              var myMusic = document.getElementById("music");
-              function play() {
-                myMusic.play();
-              }
-
-              function pause() {
-                myMusic.pause();
-              }
-            </script>
           </div>
+          <script>
+            var myMusic = document.getElementById("music");
+            function play() {
+              myMusic.play();
+            }
+
+            function pause() {
+              myMusic.pause();
+            }
+          </script>
         </div>
       </div>
+    </div>
 
-      <!-- END MUSIC PLAYER-->
+    <!-- END MUSIC PLAYER-->
+
 
       <!-- EVERYTHING ELSE -->
 
@@ -116,36 +133,32 @@
         ></iframe>
       </div>
     </div>
-    <!--CONTENT WRAPPER END-->
+    
+      <!--CONTENT WRAPPER END-->
 
-    <div class="full-row">
-      <div class="footer">
-        <a href=""
-          ><div id="start">
-            <img src="images/arthur_icon.png" class="menu-icon" />Start
-          </div></a
-        >
-        <a href=""
-          ><div id="socials">
-            <img src="images/twitter.png" class="menu-icon" />Twitter
-          </div></a
-        >
-        <a href=""
-          ><div id="socials">
-            <img src="images/ig.png" class="menu-icon" />Instagram
-          </div></a
-        >
-
-        <a href=""
-          ><div id="section-indicator">
-            <img src="images/docs_small.png" class="menu-icon" />My Documents
-          </div></a
-        >
-
-        <div id="time">5:12 PM</div>
+      <div class="full-row">
+        <div class="footer">
+          <a href=""
+            ><div id="start">
+              <img src="images/arthur_icon.png" class="menu-icon" />Start
+            </div></a
+          >
+          <a href="https://twitter.com/HDBeenDope"
+            ><div id="socials">
+              <img src="images/twitter.png" class="menu-icon" />Twitter
+            </div></a
+          >
+          <a href="https://www.instagram.com/hdbeendope/"
+            ><div id="socials">
+              <img src="images/ig.png" class="menu-icon" />Instagram
+            </div></a
+          >
+          <div id="time">5:12 PM</div>
+        </div>
       </div>
-    </div>
 
-    <script src="js/main.js" async defer></script>
-  </body>
+    <script src="js/music-player.js" async defer></script>
+    <script src="js/clock.js" async defer></script>
+  </div>
+ </body>
 </html>
