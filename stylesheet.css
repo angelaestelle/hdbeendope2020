@@ -19,7 +19,6 @@
 html,
 body {
   max-height: 100vh;
-  overflow: hidden;
 }
 body {
   height: 100%;
@@ -595,6 +594,14 @@ input {
     bottom: 0;
   }
 
+  #twitch-embed {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    width: 50%;
+    height: 50%;
+  }
+
   /* FOOTER */
   /* FOOTER */
   /* FOOTER */
@@ -722,7 +729,7 @@ input {
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
     opacity: 0;
-    top: 40px;
+    top: 10%;
     animation: 1s fadeIn forwards ease-in-out;
     animation-delay: 0.5s;
   }
