@@ -105,7 +105,7 @@ const setPlayList = (playlist) => {
 
 const onPlayListTrackClick = (track) => (_) => {
   setAudioTrack(track)
-}
+} 
 
 async function init() {
   const getPlaylist = async () => {

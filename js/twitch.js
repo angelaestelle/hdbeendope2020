@@ -9,7 +9,9 @@
 const options = {
   width: 854,
   height: 480,
-  channel: "lecheflana"
+  channel: "beendopexp",
+  layout: "video",
+  autoplay: false
   // you ned to add a video id or a collection id i think
   // https://dev.twitch.tv/docs/embed/video-and-clips#interactive-frames-for-live-streams-and-vods
 }

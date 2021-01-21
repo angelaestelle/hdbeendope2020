@@ -30,6 +30,15 @@ body {
   width: auto;
 }
 
+.bg-stream {
+  background-image: url("images/twitch bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: auto;
+}
+
 .content {
   min-height: 100%;
   min-width: 100%;
@@ -350,10 +359,12 @@ input {
 #cover-art {
   position: relative;
   transform: scale(0.77);
-  height: auto;
-  left: -30px;
-  bottom: 20px;
   top: -40px;
+}
+
+#cover-art img {
+  text-align: center;
+  position: relative;
 }
 
 .audio-btn {
@@ -585,7 +596,7 @@ input {
     height: 60px;
     margin-top: 50px;
     background: #d3d3d3;
-    bottom: -270px;
+    bottom: 0;
     font-family: px sans;
     font-size: 0.8em;
     color: #000;
@@ -764,10 +775,21 @@ input {
     bottom: 0;
   }
 
+  #limewire img {
+    display: none;
+  }
+
   #cover-art {
-    position: absolute;
-    margin-left: 15px;
-    margin-top: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #cover-art img {
+    display: block;
   }
 
   .audio-btn {
@@ -1082,6 +1104,10 @@ input {
     border: 2px solid #c4c4c4;
   }
 
+  #limewire img {
+    display: none;
+  }
+
   #cover-art {
     position: relative;
     height: auto;
@@ -1296,6 +1322,19 @@ input {
     border-left: solid 2px #6767;
   }
 
+  /* NAVIGATION */
+  /* NAVIGATION */
+  /* NAVIGATION */
+
+  .nav-item {
+    z-index: 1;
+    display: block;
+    height: 155px;
+    width: 140px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
   /* POP-UP WINDOWS */
   /* POP-UP WINDOWS */
   /* POP-UP WINDOWS */
@@ -1420,6 +1459,15 @@ input {
     bottom: 23vh;
     margin: 20px;
     border: 2px solid #c4c4c4;
+  }
+
+  #limewire img {
+    position: absolute;
+    display: inline;
+    z-index: 0;
+    right: 0;
+    bottom: 18vh;
+    margin: 20px;
   }
 
   #cover-art {
@@ -1792,12 +1840,21 @@ input {
     position: absolute;
     float: right;
     background-color: #ece9d8;
-    width: 580px;
+    width: 600px;
     height: 430px;
     right: 2%;
     bottom: 30vh;
     margin: 20px;
     border: 2px solid #c4c4c4;
+  }
+
+  #limewire img {
+    position: absolute;
+    display: inline;
+    z-index: 0;
+    right: 0;
+    bottom: 17vh;
+    margin: 20px;
   }
 
   #cover-art {
@@ -1854,9 +1911,9 @@ input {
   }
   .playlist-grid {
     grid-area: playlist-grid;
-    padding-left: 7px;
+    padding-left: 0;
     padding-top: 12px;
-    padding-right: 5px;
+    padding-right: 10px;
   }
 
   .content {
