@@ -16,6 +16,11 @@
   src: url("fonts/px_sans_nouveaux.ttf");
 }
 
+html,
+body {
+  max-height: 100vh;
+  overflow: hidden;
+}
 body {
   height: 100%;
   margin: 0;
@@ -497,6 +502,10 @@ input {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
   html,
   body {
     max-width: 100%;
@@ -508,7 +517,7 @@ input {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 100%;
     width: auto;
   }
 
@@ -592,11 +601,11 @@ input {
 
   .footer {
     position: absolute;
+    bottom: 0;
     width: 100%;
     height: 60px;
     margin-top: 50px;
     background: #d3d3d3;
-    bottom: 0;
     font-family: px sans;
     font-size: 0.8em;
     color: #000;
@@ -694,6 +703,37 @@ input {
     max-width: 100%;
   }
 
+  .popup-email {
+    width: 85%;
+    left: 7%;
+    opacity: 0;
+    top: 30vh;
+    animation: 1s fadeIn forwards ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .popup-docs {
+    position: absolute;
+    z-index: 1000;
+    margin: 0 auto;
+    width: 90%;
+    height: 80vh;
+    left: 5%;
+    background: #d3d3d3;
+    border: 2px solid #c4c4c4;
+    opacity: 0;
+    top: 40px;
+    animation: 1s fadeIn forwards ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .docs-content {
+    width: 99%;
+    height: 93%;
+    margin: 0 auto;
+    background: #fff;
+  }
+
   .cta {
     display: block;
     clear: both;
@@ -723,37 +763,6 @@ input {
     margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  .popup-email {
-    width: 85%;
-    left: 7%;
-    opacity: 0;
-    top: 30vh;
-    animation: 1s fadeIn forwards ease-in-out;
-    animation-delay: 0.5s;
-  }
-
-  .popup-docs {
-    position: absolute;
-    z-index: 1000;
-    margin: 0 auto;
-    width: 90%;
-    height: 80vh;
-    left: 5%;
-    background: #d3d3d3;
-    border: 2px solid #c4c4c4;
-    box-sizing: border-box;
-    opacity: 0;
-    animation: 1s fadeIn forwards ease-in-out;
-    animation-delay: 0.5s;
-  }
-
-  .docs-content {
-    width: 99%;
-    height: 93%;
-    margin: 0 auto;
-    background: #fff;
   }
 
   /* MUSIC PLAYER */
@@ -1456,7 +1465,7 @@ input {
     width: 580px;
     height: 430px;
     right: 3%;
-    bottom: 25vh;
+    bottom: 15vh;
     border: 2px solid #c4c4c4;
   }
 
@@ -1465,7 +1474,7 @@ input {
     display: inline;
     z-index: 0;
     right: 0;
-    bottom: 17vh;
+    bottom: 0;
     margin: 20px;
   }
 
@@ -1637,14 +1646,15 @@ input {
 
   .footer {
     position: absolute;
+    bottom: 0;
     width: 100%;
     height: 70px;
     background: #d3d3d3;
-    bottom: 0;
     font-family: px sans;
     font-size: 0.8em;
     color: #000;
     border-top: solid 2px #fff;
+    box-sizing: border-box;
   }
 
   #start {
@@ -1842,7 +1852,7 @@ input {
     width: 600px;
     height: 430px;
     right: 2%;
-    bottom: 30vh;
+    bottom: 15vh;
     margin: 20px;
     border: 2px solid #c4c4c4;
   }
@@ -1852,8 +1862,10 @@ input {
     display: inline;
     z-index: 0;
     right: 0;
-    bottom: 19vh;
+    bottom: 5vh;
     margin: 30px;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   #cover-art {

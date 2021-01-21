@@ -7,8 +7,8 @@
 
 
 const options = {
-  width: 854,
-  height: 480,
+  height: "auto",
+  width: "75%",
   channel: "beendopexp",
   layout: "video",
   autoplay: false
