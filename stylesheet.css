@@ -1455,9 +1455,8 @@ input {
     background-color: #ece9d8;
     width: 580px;
     height: 430px;
-    right: 2%;
-    bottom: 23vh;
-    margin: 20px;
+    right: 3%;
+    bottom: 25vh;
     border: 2px solid #c4c4c4;
   }
 
@@ -1466,7 +1465,7 @@ input {
     display: inline;
     z-index: 0;
     right: 0;
-    bottom: 18vh;
+    bottom: 17vh;
     margin: 20px;
   }
 
@@ -1853,8 +1852,8 @@ input {
     display: inline;
     z-index: 0;
     right: 0;
-    bottom: 17vh;
-    margin: 20px;
+    bottom: 19vh;
+    margin: 30px;
   }
 
   #cover-art {
