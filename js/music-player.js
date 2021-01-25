@@ -82,6 +82,7 @@ const onStopButton = (evt) => {
 }
 
 const setAudioTrack = (trackInfo) => {
+  const playButton = ppButton.getElementsByClassName('fa fa-play')[0]
   const track = trackInfo;
   audio.pause();
   audio.currentTime = 0;
@@ -105,7 +106,7 @@ const setPlayList = (playlist) => {
 
 const onPlayListTrackClick = (track) => (_) => {
   setAudioTrack(track)
-} 
+}
 
 async function init() {
   const getPlaylist = async () => {
