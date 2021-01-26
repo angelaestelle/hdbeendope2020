@@ -248,6 +248,7 @@ body {
 
 .close-x {
   float: right;
+  text-decoration: none;
   width: 22px;
   height: 22px;
   margin-top: 3px;
@@ -699,6 +700,7 @@ input {
 
   .close-x {
     float: right;
+    text-decoration: none;
     width: 22px;
     height: 22px;
     margin-top: 3px;
@@ -711,7 +713,6 @@ input {
     border-right: solid 2px #676767;
     box-sizing: border-box;
   }
-
   .popup-title {
     float: left;
     font-family: px sans, "Courier New", Courier, monospace;
@@ -1021,6 +1022,7 @@ input {
 
   .close-x {
     float: right;
+    text-decoration: none;
     width: 22px;
     height: 22px;
     margin-top: 3px;
@@ -1388,6 +1390,7 @@ input {
 
   .close-x {
     float: right;
+    text-decoration: none;
     width: 22px;
     height: 22px;
     margin-top: 3px;
@@ -1799,6 +1802,7 @@ input {
 
   .close-x {
     float: right;
+    text-decoration: none;
     width: 22px;
     height: 22px;
     margin-top: 3px;
