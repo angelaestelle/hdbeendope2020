@@ -18,8 +18,9 @@
 
 html,
 body {
-  max-height: 100vh;
+  min-height: 100%;
 }
+
 body {
   height: 100%;
   margin: 0;
@@ -348,9 +349,9 @@ input {
 .stream-wrapper {
   justify-content: center;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
+  top: 100px;
 }
 
 #twitch-embed {
@@ -526,7 +527,7 @@ input {
   html,
   body {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
   }
 
   .bg {
@@ -619,6 +620,7 @@ input {
 
   .footer {
     position: absolute;
+    bottom: -60px;
     max-width: 100%;
     height: 60px;
     background: #d3d3d3;
@@ -943,7 +945,7 @@ input {
     height: 60px;
     margin-top: 50px;
     background: #d3d3d3;
-    bottom: -20px;
+    bottom: -60px;
     font-family: px sans;
     font-size: 0.8em;
     color: #000;
@@ -1274,8 +1276,9 @@ input {
 @media only screen and (min-width: 768px) {
   html,
   body {
-    max-height: 100vh;
+    min-height: 100%;
   }
+
   body {
     height: 100%;
     margin: 0;
@@ -1290,7 +1293,7 @@ input {
     width: 100%;
     height: 60px;
     background: #d3d3d3;
-    bottom: 0;
+    bottom: -60px;
     font-family: px sans;
     font-size: 0.8em;
     color: #000;
@@ -1477,7 +1480,6 @@ input {
   .stream-wrapper {
     justify-content: center;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
     top: 50px;
@@ -1485,6 +1487,18 @@ input {
 
   #twitch-embed {
     text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .twitch .twitch-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
   }
 
   /* MUSIC PLAYER */
@@ -1660,16 +1674,7 @@ input {
 @media only screen and (min-width: 992px) {
   html,
   body {
-    max-height: 100vh;
-  }
-  body {
-    height: 100%;
-    margin: 0;
-  }
-
-  .content {
     min-height: 100%;
-    min-width: 100%;
   }
 
   .bg {
