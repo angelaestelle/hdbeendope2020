@@ -32,6 +32,10 @@ body {
   margin: 0;
 }
 
+a:visited {
+  color: transparent;
+}
+
 .bg {
   background-image: url("images/Desktop_wallpaper_HD.png");
   background-size: cover;
