@@ -22,6 +22,11 @@ body {
   min-height: calc(100vh - 40px);
 }
 
+html {
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
 body {
   height: 100%;
   margin: 0;
@@ -41,13 +46,17 @@ body {
 /* STREAM */
 
 .bg-stream {
-  background-image: url("images/twitch bg.png");
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#twitch-bg {
+  position: fixed;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: auto;
   height: 100vh;
-  overflow: hidden;
+  min-width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .stream-wrapper {
@@ -148,7 +157,7 @@ body {
   position: absolute;
   width: 100%;
   background: #d3d3d3;
-  bottom: 0 !important;
+  bottom: 0;
   font-family: px sans;
   font-size: 0.8em;
   color: #000;
@@ -344,15 +353,6 @@ input {
 /* STREAMING */
 /* STREAMING */
 /* STREAMING */
-
-.bg-stream {
-  background-image: url("images/twitch bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100%;
-  width: auto;
-}
 
 .stream-wrapper {
   justify-content: center;
@@ -1696,15 +1696,6 @@ input {
   /* STREAM */
   /* STREAM */
   /* STREAM */
-
-  .bg-stream {
-    background-image: url("images/twitch bg.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100%;
-    width: auto;
-  }
 
   /* FOOTER */
   /* FOOTER */
