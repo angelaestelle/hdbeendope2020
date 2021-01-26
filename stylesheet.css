@@ -19,6 +19,7 @@
 html,
 body {
   min-height: 100%;
+  min-height: calc(100vh - 40px);
 }
 
 body {
@@ -46,6 +47,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: auto;
+  overflow: hidden;
 }
 
 .stream-wrapper {
@@ -148,7 +150,7 @@ body {
   width: 100%;
   height: 70px;
   background: #d3d3d3;
-  bottom: 0;
+  bottom: 0 !important;
   font-family: px sans;
   font-size: 0.8em;
   color: #000;
@@ -345,6 +347,16 @@ input {
 /* STREAMING */
 /* STREAMING */
 
+.bg-stream {
+  background-image: url("images/twitch bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: auto;
+  overflow: hidden;
+}
+
 .stream-wrapper {
   justify-content: center;
   position: relative;
@@ -526,7 +538,8 @@ input {
   html,
   body {
     max-width: 100%;
-    min-height: calc(100vh - 60px);
+    max-height: 100%;
+    overflow: hidden;
   }
 
   .bg {
@@ -618,7 +631,7 @@ input {
   /* FOOTER */
 
   .footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     max-width: 100%;
     height: 60px;
