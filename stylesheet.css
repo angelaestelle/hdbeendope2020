@@ -45,8 +45,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100%;
   width: auto;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .stream-wrapper {
@@ -349,7 +350,7 @@ input {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100%;
   width: auto;
 }
 
@@ -1689,6 +1690,19 @@ input {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    width: auto;
+  }
+
+  /* STREAM */
+  /* STREAM */
+  /* STREAM */
+
+  .bg-stream {
+    background-image: url("images/twitch bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100%;
     width: auto;
   }
 
