@@ -33,7 +33,7 @@ body {
 }
 
 a:visited {
-  color: transparent;
+  text-decoration: none;
 }
 
 .bg {
