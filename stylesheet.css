@@ -45,9 +45,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100%;
   width: auto;
-  overflow: hidden;
 }
 
 .stream-wrapper {
@@ -56,7 +55,6 @@ body {
   top: 30%;
   padding-bottom: 50%; /* 16:9 */
   height: 0;
-  overflow: hidden;
 }
 
 #twitch-embed {
@@ -353,7 +351,6 @@ input {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: auto;
-  overflow: hidden;
 }
 
 .stream-wrapper {
@@ -632,6 +629,7 @@ input {
     position: absolute;
     bottom: 0;
     max-width: 100%;
+    clear: both;
     height: 60px;
     background: #d3d3d3;
     font-family: px sans;
@@ -1490,7 +1488,6 @@ input {
     justify-content: center;
     position: relative;
     height: 0;
-    overflow: hidden;
     top: 50px;
   }
 
