@@ -405,6 +405,7 @@ input {
 #cover-art img {
   text-align: center;
   position: relative;
+  transform: scale(0.77);
 }
 
 .audio-btn {
@@ -459,8 +460,7 @@ input {
 
 .content {
   display: inline;
-  min-height: 277px !important;
-  min-width: 100px !important;
+  overflow: scroll;
 }
 
 #playlist {
@@ -822,15 +822,22 @@ input {
 
   #cover-art {
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    transform: scale(0.35);
+    height: auto;
+    left: 0;
+    bottom: 20px;
+    top: -360px;
+    display: flex;
     width: 100%;
   }
 
   #cover-art img {
     display: block;
+    text-align: center;
+    position: relative;
   }
 
   .audio-btn {
@@ -865,15 +872,15 @@ input {
 
   .artwork-grid {
     grid-area: artwork-grid;
+    max-height: 217px;
   }
   .playlist-grid {
     grid-area: playlist-grid;
+    display: block;
   }
 
   .content {
-    display: inline;
-    min-height: 150px !important;
-    min-width: 100px !important;
+    max-height: 200px !important;
   }
 
   #playlist {
@@ -881,11 +888,10 @@ input {
     position: absolute;
     background: white;
     margin: 0 auto;
-    width: 95%;
     font-size: 0.6em;
     font-family: px sans, "Courier New", Courier, monospace;
     line-height: 25px;
-    bottom: 50px;
+    bottom: 10px;
   }
 
   #tracklist {
@@ -1146,10 +1152,17 @@ input {
 
   #cover-art {
     position: relative;
+    transform: scale(0.35);
     height: auto;
-    left: -30px;
+    left: -130px;
     bottom: 20px;
-    top: -40px;
+    top: -360px;
+  }
+
+  #cover-art img {
+    display: flex;
+    text-align: center;
+    position: relative;
   }
 
   .audio-btn {
@@ -1157,13 +1170,6 @@ input {
     background: transparent;
     border: none;
     transform: scale(1.5);
-  }
-
-  #turbocharged {
-    position: absolute;
-    float: right;
-    top: 370px;
-    right: 0;
   }
 
   .controls-container {
@@ -1210,7 +1216,10 @@ input {
 
   .artwork-grid {
     grid-area: artwork-grid;
+    padding: 10px;
+    max-height: 217px;
   }
+
   .playlist-grid {
     grid-area: playlist-grid;
     padding-right: 5px;
@@ -1218,8 +1227,9 @@ input {
 
   .content {
     display: inline;
-    min-height: 277px !important;
-    min-width: 100px !important;
+    max-height: 277px !important;
+    max-width: 300px !important;
+    overflow: scroll;
   }
 
   #playlist {
@@ -1545,10 +1555,17 @@ input {
 
   #cover-art {
     position: relative;
+    transform: scale(0.35);
     height: auto;
-    left: -30px;
+    left: -130px;
     bottom: 20px;
-    top: -40px;
+    top: -360px;
+  }
+
+  #cover-art img {
+    display: flex;
+    text-align: center;
+    position: relative;
   }
 
   .audio-btn {
@@ -1608,6 +1625,7 @@ input {
 
   .artwork-grid {
     grid-area: artwork-grid;
+    max-height: 217px;
   }
   .playlist-grid {
     grid-area: playlist-grid;
@@ -1624,7 +1642,7 @@ input {
     z-index: 100;
     position: absolute;
     background: white;
-    width: auto;
+    width: 100%;
     font-size: 0.6em;
     font-family: px sans, "Courier New", Courier, monospace;
     line-height: 30px;
@@ -1934,11 +1952,17 @@ input {
 
   #cover-art {
     position: relative;
-    transform: scale(0.77);
+    transform: scale(0.35);
     height: auto;
-    left: -30px;
+    left: -130px;
     bottom: 20px;
-    top: -40px;
+    top: -360px;
+  }
+
+  #cover-art img {
+    display: flex;
+    text-align: center;
+    position: relative;
   }
 
   .audio-btn {
@@ -1983,6 +2007,7 @@ input {
   .artwork-grid {
     grid-area: artwork-grid;
     padding: 10px;
+    max-height: 217px;
   }
   .playlist-grid {
     grid-area: playlist-grid;
@@ -1993,8 +2018,9 @@ input {
 
   .content {
     display: inline;
-    min-height: 277px !important;
-    min-width: 100px !important;
+    max-height: 277px !important;
+    max-width: 300px !important;
+    overflow: scroll;
   }
 
   #playlist {

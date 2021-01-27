@@ -110,7 +110,7 @@ const onPlayListTrackClick = (track) => (_) => {
 
 async function init() {
   const getPlaylist = async () => {
-    const response = await fetch('https://discoveryprovider2.audius.co/v1/playlists/LKpaY/tracks', {
+    const response = await fetch('https://discoveryprovider2.audius.co/v1/playlists/e4aRE/tracks', {
       method: 'GET',
     });
     const { data } = await response.json();
