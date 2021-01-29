@@ -1307,9 +1307,9 @@ input {
     position: absolute;
     z-index: 1000;
     margin: 0 auto;
-    width: 80%;
-    height: 80vh;
-    left: 10%;
+    width: 60%;
+    height: 60vh;
+    left: 5%;
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
     box-sizing: border-box;
@@ -1736,10 +1736,10 @@ input {
     position: absolute;
     z-index: 999;
     margin-bottom: 20vh;
-    width: 80%;
-    height: 80vh;
+    width: 70%;
+    height: 60vh;
     left: 5%;
-    top: 10%;
+    top: 8%;
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
     box-sizing: border-box;
@@ -2227,7 +2227,7 @@ input {
     z-index: 1000;
     margin-bottom: -5vw;
     width: 80%;
-    height: 80vh;
+    height: 65vh;
     left: 5%;
     top: 5%;
     background: #d3d3d3;
