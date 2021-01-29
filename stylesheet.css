@@ -337,7 +337,7 @@ input {
   animation-delay: 0s;
 }
 
-.popup-docs {
+#popup-docs {
   position: absolute;
   z-index: 1000;
   height: 400px;
@@ -346,9 +346,6 @@ input {
   background: #d3d3d3;
   border: 2px solid #c4c4c4;
   box-sizing: border-box;
-  opacity: 0;
-  animation: 0.5s fadeIn forwards ease-in-out;
-  animation-delay: 0s;
 }
 
 .docs-content {
@@ -864,7 +861,7 @@ input {
     animation-delay: 0.5s;
   }
 
-  .popup-docs {
+  #popup-docs {
     position: absolute;
     z-index: 1000;
     margin: 0 auto;
@@ -873,10 +870,6 @@ input {
     left: 5%;
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
-    opacity: 0;
-    top: 10%;
-    animation: 1s fadeIn forwards ease-in-out;
-    animation-delay: 0.5s;
   }
 
   .docs-content {
@@ -1303,7 +1296,7 @@ input {
     animation-delay: 0.5s;
   }
 
-  .popup-docs {
+  #popup-docs {
     position: absolute;
     z-index: 1000;
     margin: 0 auto;
@@ -1313,9 +1306,6 @@ input {
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
     box-sizing: border-box;
-    opacity: 0;
-    animation: 1s fadeIn forwards ease-in-out;
-    animation-delay: 0.5s;
   }
 
   .docs-content {
@@ -1732,7 +1722,7 @@ input {
     animation-delay: 0.5s;
   }
 
-  .popup-docs {
+  #popup-docs {
     position: absolute;
     z-index: 999;
     margin-bottom: 20vh;
@@ -1743,9 +1733,6 @@ input {
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
     box-sizing: border-box;
-    opacity: 0;
-    animation: 1s fadeIn forwards ease-in-out;
-    animation-delay: 0.5s;
   }
 
   .docs-content {
@@ -2222,7 +2209,7 @@ input {
     animation-delay: 0.5s;
   }
 
-  .popup-docs {
+  #popup-docs {
     position: absolute;
     z-index: 1000;
     margin-bottom: -5vw;
@@ -2233,9 +2220,6 @@ input {
     background: #d3d3d3;
     border: 2px solid #c4c4c4;
     box-sizing: border-box;
-    opacity: 0;
-    animation: 1s fadeIn forwards ease-in-out;
-    animation-delay: 0.5s;
   }
 
   .docs-content {

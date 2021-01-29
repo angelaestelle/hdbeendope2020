@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
   </head>
   <body>
     <!-- LIMEWIRE BG -->
@@ -89,18 +90,18 @@
       <!-- EVERYTHING ELSE -->
       <div class="grid-container">
         <div class="nav-item left">
-          <a href="https://labbrat.com/" class="nav-link">
+          <a href="https://labbrat.com/" target="_blank" class="nav-link">
             <img src="images/merch-icon.png" class="nav-icon" />
             <div class="nav-item-title">Merch</div>
           </a>
         </div>
 
-        <div class="nav-item right">
-          <a href="documents.html" class="nav-link">
+           <div class="nav-item right">
+         <div onclick="openiFrame()"  class="nav-link">
             <img src="images/docs-icon.png" class="nav-icon" />
-            <div class="nav-item-title">My Documents</div></a
-          >
-        </div>
+            <div class="nav-item-title">My Documents</div></button>
+        </div></div>
+        
         <div class="nav-item left-2r">
           <a href="stream.html" class="nav-link">
             <img src="images/stream-icon.png" class="nav-icon" />
@@ -109,12 +110,29 @@
         </div>
 
         <div class="nav-item right-2r">
-          <a href="https://smarturl.it/HDBrokeNDreams" class="nav-link">
+          <a href="https://smarturl.it/HDBrokeNDreams"  target="_blank" class="nav-link">
             <img src="images/cd-icon.png" class="nav-icon" />
             <div class="nav-item-title">Music</div></a
           >
         </div>
       </div>
+
+       <!-- DOCUMENTS WINDOW -->
+       <div id="popup-docs" style="display:none;">
+        <span class="popup-title">My Documents</span>
+        <div class="close-bar">
+    <span  onclick="openiFrame()" class="close-x"
+              ><img src="images/close-x.png" style="margin-top: 2px" /></span
+          style="text-decoration: none;">
+        </div>
+        <iframe
+          src="documents-content.html"
+          title="Iframe Example"
+          class="docs-content"
+ 
+        ></iframe>
+      </div>
+
 
       <!--CONTENT WRAPPER END-->
 
@@ -141,6 +159,16 @@
 
       <script src="js/music-player.js" async defer></script>
       <script src="js/clock.js" async defer></script>
+      <script>
+      function openiFrame() {
+  var x = document.getElementById("popup-docs");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}</script>
+
     </div>
   </body>
 </html>
