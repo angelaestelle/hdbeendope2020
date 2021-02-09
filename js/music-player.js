@@ -17,6 +17,24 @@ const playlistContent = document.getElementById('playlist')
 
 let playList = [];
 let index = 0;
+let SERVER = '';
+
+const setServer = async () => {
+  const response = await fetch('https://api.audius.co', {
+    method: 'GET',
+  })
+  const { data } = await response.json();
+  SERVER = data[0];
+  return data;
+}
+
+const getPlaylist = async () => {
+  const response = await fetch(`${SERVER}/v1/playlists/e4aRE/tracks`, {
+    method: 'GET',
+  });
+  const { data } = await response.json();
+  return data;
+}
 
 /* 
 AUDIUS API AUDIUS API AUDIUS API AUDIUS API AUDIUS API
@@ -89,7 +107,7 @@ const setAudioTrack = (trackInfo) => {
   trackDisplay.textContent = track.title;
   // SET TRACK ART
   artwork.innerHTML = `<img src=${track.artwork['1000x1000']}/>`;
-  audioSrc.src = `https://discoveryprovider2.audius.co/v1/tracks/${track.id}/stream`;
+  audioSrc.src = `${SERVER}/v1/tracks/${track.id}/stream`;
   audio.load();
   audio.play()
   playButton.className = 'fa fa-pause'
@@ -109,18 +127,11 @@ const onPlayListTrackClick = (track) => (_) => {
 }
 
 async function init() {
-  const getPlaylist = async () => {
-    const response = await fetch('https://discoveryprovider2.audius.co/v1/playlists/e4aRE/tracks', {
-      method: 'GET',
-    });
-    const { data } = await response.json();
-    return data;
-  }
+  await setServer()
   playList = await getPlaylist()
   setPlayList(playList)
   setAudioTrack(playList[0])
 }
-
 
 nextButton.addEventListener('click', onNextButton)
 previousButton.addEventListener('click', onPreviousButton)
