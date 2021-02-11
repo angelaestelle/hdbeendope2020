@@ -29,7 +29,7 @@ const setServer = async () => {
 }
 
 const getPlaylist = async () => {
-  const response = await fetch(`${SERVER}/v1/playlists/e4aRE/tracks`, {
+  const response = await fetch(`${SERVER}/v1/playlists/ndVb2/tracks`, {
     method: 'GET',
   });
   const { data } = await response.json();
