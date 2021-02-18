@@ -104,7 +104,7 @@ a:visited {
 
 .nav-item-title {
   text-align: center;
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   font-size: 0.8em;
 }
 
@@ -166,7 +166,7 @@ a:visited {
   width: 100%;
   background: #d3d3d3;
   bottom: 0;
-  font-family: px sans;
+  font-family: "px sans";
   font-size: 0.8em;
   color: #000;
   border-top: solid 2px #fff;
@@ -272,7 +272,7 @@ a:visited {
 
 .popup-title {
   float: left;
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   font-size: 0.8em;
   color: #fff;
   margin-left: 8px;
@@ -299,7 +299,7 @@ a:visited {
   margin: 0 auto;
   height: 50px;
   width: 160px;
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   background: #d4d0c8;
   border-left: solid 2px #fff;
   border-top: solid 2px #fff;
@@ -414,7 +414,7 @@ input {
 }
 
 .doc-text {
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   font-size: 0.8em;
   width: 100%;
   padding-bottom: 20px;
@@ -447,7 +447,7 @@ input {
   z-index: 100;
   width: 150px;
   height: 50px;
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   font-size: 0.8em;
   color: #000;
   text-align: center;
@@ -523,7 +523,7 @@ input {
   z-index: 1;
   color: #000;
   font-size: 0.8rem;
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   padding-left: 20px;
 }
 
@@ -561,7 +561,7 @@ input {
   background: white;
   width: auto;
   font-size: 0.6em;
-  font-family: px sans, "Courier New", Courier, monospace;
+  font-family: "px sans", "Courier New", Courier, monospace;
   line-height: 30px;
 }
 
@@ -656,7 +656,7 @@ input {
     z-index: 100;
     width: 150px;
     height: 50px;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: #000;
     text-align: center;
@@ -690,7 +690,7 @@ input {
 
   .nav-item-title {
     text-align: center;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: white;
   }
@@ -755,7 +755,7 @@ input {
     clear: both;
     height: 60px;
     background: #d3d3d3;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     color: #000;
     border-top: solid 2px #fff;
@@ -836,7 +836,7 @@ input {
   }
   .popup-title {
     float: left;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: #fff;
     margin-left: 8px;
@@ -847,7 +847,7 @@ input {
     margin: 0 auto;
     text-align: center;
     padding: 10px;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     max-width: 100%;
   }
@@ -885,7 +885,7 @@ input {
     margin: 0 auto;
     height: 50px;
     width: 160px;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     background: #d4d0c8;
     border-left: solid 2px #fff;
     border-top: solid 2px #fff;
@@ -961,7 +961,7 @@ input {
   }
 
   .doc-text {
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     width: 100%;
     padding-bottom: 20px;
@@ -1023,7 +1023,7 @@ input {
     text-align: center;
     color: #000;
     font-size: 0.6rem;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     padding-left: 5px;
     padding-right: 5px;
     bottom: 10px;
@@ -1059,7 +1059,7 @@ input {
     background: white;
     margin: 0 auto;
     font-size: 0.6em;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     line-height: 25px;
     bottom: 10px;
   }
@@ -1135,7 +1135,7 @@ input {
     max-width: 100%;
     height: 70px;
     background: #d3d3d3;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     color: #000;
     border-top: solid 2px #fff;
@@ -1197,7 +1197,7 @@ input {
     z-index: 100;
     width: 150px;
     height: 50px;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: #000;
     text-align: center;
@@ -1240,7 +1240,7 @@ input {
 
   .popup-title {
     float: left;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: #fff;
     margin-left: 8px;
@@ -1262,7 +1262,7 @@ input {
     margin: 0 auto;
     height: 50px;
     width: 160px;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     background: #d4d0c8;
     border-left: solid 2px #fff;
     border-top: solid 2px #fff;
@@ -1443,7 +1443,7 @@ input {
     z-index: 1;
     color: #000;
     font-size: 0.8rem;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     padding-left: 20px;
   }
 
@@ -1483,7 +1483,7 @@ input {
     background: white;
     width: auto;
     font-size: 0.6em;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     line-height: 30px;
   }
 
@@ -1564,7 +1564,7 @@ input {
     max-width: 100%;
     height: 60px;
     background: #d3d3d3;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     color: #000;
     border-top: solid 2px #fff;
@@ -1666,7 +1666,7 @@ input {
 
   .popup-title {
     float: left;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: #fff;
     margin-left: 8px;
@@ -1677,7 +1677,7 @@ input {
     margin: 0 auto;
     text-align: center;
     padding: 10px;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     max-width: 100%;
   }
@@ -1688,7 +1688,7 @@ input {
     margin: 0 auto;
     height: 50px;
     width: 160px;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     background: #d4d0c8;
     border-left: solid 2px #fff;
     border-top: solid 2px #fff;
@@ -1801,7 +1801,7 @@ input {
   }
 
   .doc-text {
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     width: 100%;
     padding-bottom: 20px;
@@ -1914,7 +1914,7 @@ input {
     z-index: 1;
     color: #000;
     font-size: 0.8rem;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     padding-left: 10px;
   }
 
@@ -1951,7 +1951,7 @@ input {
     background: white;
     width: 100%;
     font-size: 0.6em;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     line-height: 30px;
   }
 
@@ -2038,7 +2038,7 @@ input {
     bottom: 0;
     width: 100%;
     background: #d3d3d3;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     color: #000;
     border-top: solid 2px #fff;
@@ -2147,7 +2147,7 @@ input {
 
   .popup-title {
     float: left;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     color: #fff;
     margin-left: 8px;
@@ -2158,7 +2158,7 @@ input {
     margin: 0 auto;
     text-align: center;
     padding: 10px;
-    font-family: px sans;
+    font-family: "px sans";
     font-size: 0.8em;
     max-width: 100%;
   }
@@ -2169,7 +2169,7 @@ input {
     margin: 0 auto;
     height: 50px;
     width: 160px;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     background: #d4d0c8;
     border-left: solid 2px #fff;
     border-top: solid 2px #fff;
@@ -2283,7 +2283,7 @@ input {
   }
 
   .doc-text {
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     font-size: 0.8em;
     width: 100%;
     padding-bottom: 20px;
@@ -2366,7 +2366,7 @@ input {
     z-index: 1;
     color: #000;
     font-size: 0.8rem;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     padding-left: 20px;
   }
 
@@ -2407,7 +2407,7 @@ input {
     background: white;
     width: auto;
     font-size: 0.6em;
-    font-family: px sans, "Courier New", Courier, monospace;
+    font-family: "px sans", "Courier New", Courier, monospace;
     line-height: 30px;
   }
 
